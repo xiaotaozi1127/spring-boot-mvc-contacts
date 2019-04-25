@@ -11,7 +11,7 @@ import java.util.List;
 import java.util.Map;
 
 @Controller
-@RequestMapping("/contact")
+@RequestMapping("/")
 public class ContactController {
     @Autowired
     private ContactRepository contactRepository;
@@ -26,6 +26,6 @@ public class ContactController {
     @RequestMapping(method = RequestMethod.POST)
     public String submit(Contact contact){
         contactRepository.save(contact);
-        return "redirect:/contact";
+        return "redirect:/";
     }
 }
