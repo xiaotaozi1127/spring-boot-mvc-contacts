@@ -1,0 +1,10 @@
+body {
+    background-color: #ee8c5e;
+    font-family: sans-serif;
+}
+
+label {
+    display: inline-block;
+    width: 120px;
+    text-align: right;
+}
